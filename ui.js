@@ -15,7 +15,7 @@ class UI {
         this.location.textContent = weather.name + ", " + weather.sys.country;
         this.desc.textContent = weather.weather[0].main;
         this.string.textContent = Math.round(weather.main.temp) + "℃";
-        this.icon.setAttribute('src', `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`);
+        this.icon.setAttribute('src', `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`);
         this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
         this.minTemp.textContent = `Min temp: ${Math.round(weather.main.temp_min)}℃`;
         this.maxTemp.textContent = `Max temp: ${Math.round(weather.main.temp_max)}℃`;
