@@ -23,7 +23,7 @@ class UI {
         // Transform wind degrees to direction
         let windDirection = '';
         let degrees = Math.floor((weather.wind.deg / 22.5) + 0.5);
-        const directions = ["N ⬇", "N/NE ⬋", "NE ⬋", "E/NE ⬋", "E ⬅", "E/SE ⬉", "SE ⬉", "S/SE ⬉", "S ⬆", "S/SW ⬈", "SW ⬈", "W/SW ⬈", "W →", "W/NW ⬊", "NW ⬊", "N/NW ⬊"];
+        const directions = ["N ⬇", "N/NE ⬋", "NE ⬋", "E/NE ⬋", "E ⬅", "E/SE ⬉", "SE ⬉", "S/SE ⬉", "S ⬆", "S/SW ⬈", "SW ⬈", "W/SW ⬈", "W ➡", "W/NW ⬊", "NW ⬊", "N/NW ⬊"];
         windDirection = directions[(degrees % 16)];
 
         if (weather.wind.deg !== undefined) { 
